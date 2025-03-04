@@ -1,0 +1,15 @@
+footer { 
+    margin-top: 11rem;
+    color: #fff;
+    text-align: center;
+    .container {
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 2rem;
+            color: #C0C0C0;
+        }
+    }
+}
+        

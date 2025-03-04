@@ -1,0 +1,161 @@
+//import des variables et mixins
+@use '../assets/abstracts/variables' as *;
+@use '../assets/abstracts/mixins' as *;
+@use '../assets/abstracts/functions' as *;
+@use '../assets/abstracts/colors' as *;
+@use '../assets/abstracts/typography' as *; 
+//import des bases
+@use '../assets/base/reset' as *;
+@use '../assets/base/global' as *;
+@use '../assets/base/reset-typography' as *;
+//Import des layouts
+@use '../assets/layout/header' as *;
+@use '../assets/layout/footer' as *;
+@use '../assets/layout/grid' as *;
+@use '../assets/layout/forms' as *;
+//Import des composants
+@use '../assets/componement/buttons/icon' as *;
+@use '../assets/componement/buttons/primary' as *;
+@use '../assets/componement/buttons/secondary' as *;
+@use '../assets/componement/cards/movies-cards' as *;
+@use '../assets/componement/cards/product-card' as *;
+//Import des composants
+@use '../assets/page/home' as *; 
+@use '../assets/page/about' as *;
+@use '../assets/page/contact' as *;
+@use '../assets/page/error' as *;
+
+
+
+
+.trending {
+    margin-bottom: 15rem;
+    .new {
+        ul {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+            li {
+                a{
+                    @include link;
+                }
+            }
+        }
+    }
+}
+
+.row-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+@media (max-width: 764px) {
+    .row-cards {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+.plan { 
+    color: #fff;
+    .title-plan { 
+        text-align: center;
+        h2 {
+            font-size: 40px;
+            line-height: 0;  
+        }  
+    }
+}
+.span {
+    @include span;
+    span {
+        @include span-disney;
+    }
+}
+// pour les 3 card
+.cards-subscrib {
+    .row-cards {
+        display: flex;
+        .card {
+            border: solid 1px #333;
+            padding: 2rem;
+            width: 15%;
+            height: auto;
+            ul {
+                list-style: none;
+                li::before {
+                    content: '✓'; /* Ajouter un symbole de coche */
+                    color: #fff; /* Couleur de la coche */ 
+                    width: 1em;
+                    margin-left: -1em;
+                }
+            }
+        }    
+    }
+}
+.cards-subscrib { 
+    .card {
+        .primary-btn {
+        @include primary-btn;
+        text-align: center;
+            a {
+                @include link;
+            }
+        }
+    }
+}
+// pour la premiere card
+.cards-subscrib {
+    .row-cards {
+        display: flex;
+        .card:first-child {
+            border: solid 1px #333;
+            padding: 2rem;
+            width: 15%;
+            height: auto;
+            ul {
+                margin-bottom: 4rem;
+            }
+        }
+    }
+}
+// pour la deuxieme card
+.cards-subscrib {
+    .row-cards {
+        display: flex;
+        .card:nth-child(2) {
+            border: solid 1px #333;
+            padding: 2rem;
+            width: 15%;
+            height: auto;
+            ul {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+.cards-subscrib { 
+    .price{
+        span {
+            font-size: 10px;
+            color: #c0c0c0;
+        }
+    }
+}
+.condition {
+    text-align: center;
+    line-height: 0.5rem;
+    color: #333;
+} 
+
+
+
+
+
+
+    
+
+    
+
+

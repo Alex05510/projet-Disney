@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Avenir-Black", serif ;
+    src: url("/fonts/Avenir-Black.ttf");
+}
+
+@font-face {
+    font-family: "Avenir-book", serif ;
+    src: url("/fonts/Avenir-Book.ttf");
+}

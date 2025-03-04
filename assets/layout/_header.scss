@@ -1,0 +1,98 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/typography' as *;
+@use '../abstracts/mixins' as *;
+@use '../componement/cards/product-card' as *;
+
+body {
+    background-color: #040714;
+}
+header {
+        background-image: url(/assets/images/background/background.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        object-fit: cover;
+        width: 100%;
+        height: 100vh;
+        @media (max-width: 764px) {
+        header {
+        background-image: url(/assets/images/background/background.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        object-fit: cover;
+        width: 100%;
+        height: 100vh;
+    }
+}
+        
+
+.container-fluid {  
+    .row {
+        width: 100%;
+        .navbar {
+            padding: 1rem;
+            nav {
+                text-align: center;
+                padding: 1rem;
+                width: 3%;
+                margin-left: 90%;
+                background-color: #000;
+                border: solid 1px #fff;
+                border-radius: 0.5rem;
+                    a {
+                        @include link;
+                    }
+                }
+            }
+        }
+    }
+}
+.banner {
+    color: #fff;
+    text-align: center;
+    line-height: 2rem;
+    margin-top: 7rem;
+    .container {
+        display: flex;
+        justify-content: center;
+            .primary-btn {
+                @include primary-btn;
+                a {
+                    @include link;
+                }
+            }
+        }
+    }
+    @media (max-width: 764px){
+        .banner {
+            .container {
+                .row-banner {
+                    display: none;
+                }
+            }
+        }
+    }
+    @media (min-width: 764px) {
+        .media-primary-btn {
+        display: none; 
+    }
+}
+@media (max-width: 764px) {
+    .title {
+        display: none;
+    }
+}
+@media (max-width: 764px) {
+    .brand {
+            display: none;
+        }
+}
+
+
+
+
+
+
+
+
+
+ 

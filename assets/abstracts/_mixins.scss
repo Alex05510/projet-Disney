@@ -1,0 +1,29 @@
+@mixin link {
+    text-decoration: none;
+    color: #fff;
+}
+
+@mixin primary-btn {
+    background-color: #0063E5;
+    padding: 1rem 2rem;
+    border: solid 1px #0063E5;
+    border-radius: 5px;
+    width: 72%;
+    margin-right: 11rem;
+}
+
+@mixin span {
+    border: solid 1px #333;
+    margin-right: 45%;
+    border-radius: 2rem;
+    margin-left: 45%;
+    background-color: #333;
+}
+
+@mixin span-disney {
+    border: solid 1px #0063E5;
+    border-radius: 1rem;
+    background-color: #0063E5;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
