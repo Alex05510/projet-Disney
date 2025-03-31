@@ -5,7 +5,7 @@ Ce projet est une application web inspirée de l'univers magique de Disney, con�
 ---
 
 ## Démo en ligne
-👉 [Lien vers la démo](https://Alex05510.github.io/projet-Disney/)
+👉 [Lien vers la démo](https://alex05510.github.io/projet-Disney/)
 
 ---
 
